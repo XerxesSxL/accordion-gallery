@@ -2,7 +2,10 @@ accordion-gallery
 ================
 
 jQuery based accordion photo gallery.<br />
-Highly customizable accordion style photo gallery with a wide assortment of options:<br />
+Highly customizable accordion style photo gallery with a wide assortment of options.
+
+FEATURES:
+=========
 * Accordion style photo gallery
 * Maintains image/video aspect ratios
 * Full Screen or Specific size gallery
