@@ -1,0 +1,97 @@
+/* CSS Document */
+
+/* DEFAULT GALLERY STYLES */
+			
+body.full-screen-accordion-gallery,
+body.body-accordion-gallery-loading {
+	overflow:hidden;
+}
+
+.accordion-gallery {
+	position:relative;
+	overflow:hidden;
+}
+
+.accordion-gallery-loading {
+	width:100%;
+	height:100%;
+	z-index:9999999999;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.accordion-gallery-slide {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.accordion-gallery-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+}
+
+.accordion-gallery-slide.inactive .accordion-gallery-overlay {
+	display:none;
+}
+
+.accordion-gallery-element {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.accordion-gallery-indicator {
+	position:absolute;
+	z-index:100;
+	display:none;
+	width:200px;
+	height:10px;
+	background-color:transparent;
+}
+
+.accordion-gallery-indicator-inner {
+	width:0px;
+	height:100%;
+	background-color:#000;
+}
+
+.accordion-gallery-indicator-control {
+	cursor:pointer;
+	background-color:#000;
+	color:#fff;
+	display:inline-block;
+}
+
+.accordion-gallery-active {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:50;
+}
+
+.accordion-gallery-slide.active .accordion-gallery-active {
+	display:none;
+}
+
+.accordion-gallery-video-element {
+	background-color:#000;
+}
+
+.accordion-gallery-video-poster {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.accordion-gallery-drag {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:200;
+}

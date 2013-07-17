@@ -1,0 +1,376 @@
+/* CSS Document */
+
+/* FONTS */
+
+.trebuchet {
+	font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+/* UTILITY */
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+.hide {
+	display:none;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.no-hover:hover {
+	text-decoration:none !important;
+}
+
+.text-center {
+	text-align:center;
+}
+
+/* MAIN */
+
+body {
+	font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size:13px;
+	color:#ccc;
+	background-color:#000;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:"Josefin Slab", Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+}
+
+p {
+	line-height:1.25;
+}
+
+.blue {
+	color:#00aeef !important;
+}
+
+.who-color {
+	color:#00aeef !important;
+}
+
+.what-color {
+	color:#ec008c !important;
+}
+
+.work-color {
+	color:#4db916 !important;
+}
+
+.where-color {
+	color:#c03bbd !important;
+}
+
+.white-color {
+	color:#fff !important;
+}
+
+a {
+	text-decoration:none;
+	color:#ccc;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.blue-link-arrow {
+	display:inline-block;
+	width:12px;
+	height:14px;
+	background:url(../images/link-blue-arrow-12x14.png) 0 0 no-repeat;
+}
+
+/* LAYOUT */
+
+.header, .footer {
+	position:fixed;
+	left:0;
+	z-index:99999;
+	width:100%;
+	background-color:#00aeef;
+	color:#333;
+}
+
+.header .header-inner, .footer .footer-inner {
+	min-width:950px;
+	max-width:1160px;
+	margin:0 auto;
+}
+
+.header .header-tab, .footer .footer-tab {
+	width:100%;
+	height:50px;
+	position:absolute;
+	left:0;
+}
+
+.pull-tab {
+	position:absolute;
+	cursor:pointer;
+}
+
+/* HEADER */
+
+.header {
+	top:-80px;
+	height:80px;
+}
+
+.header .header-hover {
+	height:80px;
+	width:100%;
+}
+
+.header .header-inner.header-inner {
+	height:80px;
+}
+
+.header .header-tab {
+	width:100%;
+	height:66px;
+	background:url(../images/header-background-1x66.png) top left repeat-x;
+	bottom:-66px;
+}
+
+.header .header-tab .header-tab-inner {
+	min-width:950px;
+	max-width:1160px;
+	margin:0 auto;
+}
+
+.header .header-tab .pull-tab {
+	top:0;
+	right:150px;
+	width:32px;
+	height:40px;
+	background:url(../images/header-tab-32x40.png) top center no-repeat;
+}
+
+.header .header-tab .pull-tab.active {
+	background-position:bottom center;
+}
+
+.header .header-tab .header-tab-inner .header-logo {
+	margin-top:17px;
+}
+
+/* NAVIGATION */
+
+.header-nav {
+	font-size:14px;
+	margin:12px 0 0 150px;
+}
+
+.header-nav ul li {
+	float:left;
+}
+
+.header-nav ul li a {
+	display:inline-block;
+	border-left:solid 1px #434343;
+	padding:10px 20px;
+}
+
+.header-nav ul li:last-child a {
+	border-right:solid 1px #434343;
+}
+
+.header-nav ul li a:hover, .header-nav ul li a.active {
+	background:url(../images/header-nav-background-1x34.png) 0 0 repeat-x;
+}
+
+.header-nav ul li a.who-nav:hover, .header-nav ul li a.who-nav.active {
+	color:#00aeef
+}
+
+.header-nav ul li a.what-nav:hover, .header-nav ul li a.what-nav.active {
+	color:#ec008c
+}
+
+.header-nav ul li a.work-nav:hover, .header-nav ul li a.work-nav.active {
+	color:#4db916
+}
+
+.header-nav ul li a.where-nav:hover, .header-nav ul li a.where-nav.active {
+	color:#c03bbd
+}
+
+.header-nav ul li a.white-nav:hover {
+	color:#fff
+}
+
+/* FOOTER */
+
+.footer {
+	height:260px;
+	bottom:-260px;
+}
+
+.footer .footer-hover {
+	height:260px;
+	width:100%;
+}
+
+.footer .footer-inner {
+	height:260px;
+}
+
+.footer .footer-tab {
+	width:100%;
+	height:34px;
+	background:url(../images/footer-background-1x22.png) bottom left repeat-x;
+	top:-34px;
+}
+
+.footer .footer-tab .pull-tab {
+	width:32px;
+	height:34px;
+	background:url(../images/footer-tab-32x34.png) top center no-repeat;
+	bottom:0;
+	left:150px;
+}
+
+.footer .footer-tab .pull-tab.active {
+	background-position:bottom center;
+}
+
+/* PROMOS*/
+
+.gallery-promos {
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:60px;
+	z-index:88888;
+}
+
+.gallery-promos .gallery-promos-inner {
+	min-width:950px;
+	max-width:1160px;
+	margin:0 auto;
+}
+
+.gallery-promos .gallery-promos-inner .gallery-promo {
+	width:270px;
+	border-top:solid 1px #fff;
+	border-bottom:solid 1px #fff;
+	margin:0 10px;
+	padding-bottom:20px;
+	font-size:13px;
+	color:#ccc;
+}
+
+.gallery-promos .gallery-promos-inner .gallery-promo .promo-title {
+	font-size:22px;
+	margin:20px 0 18px 0;
+	color:#fff;
+}
+
+.gallery-promos .gallery-promos-inner .gallery-promo .promo-description {
+	line-height:18px;
+}
+
+.gallery-promos .gallery-promos-inner .gallery-promo .promo-description .blue-link-arrow {
+	margin-left:7px;
+}
+
+/* GALLERY */
+
+/* OVERRIDE GALLERY STYLES */
+
+.accordion-gallery {
+	background:url(../images/gallery-background.png) 0 0 repeat;
+	margin:0 auto;
+}
+
+.accordion-gallery-loading {
+	background-color:#000;
+}
+
+.accordion-gallery-slide {
+	-webkit-box-shadow:0px 0px 5px 1px #000;
+	-moz-box-shadow:0px 0px 5px 1px #000;
+	box-shadow:0px 0px 5px 1px #000;
+}
+
+.accordion-gallery-overlay {
+	top:100px;
+	background:url(../images/gallery-overlay-background.png) top right no-repeat;
+	padding:25px;
+	color:#e5e5e5;
+	font-size:17px;
+}
+
+.accordion-gallery-overlay-title {
+	font-size:58px;
+	color:#fff;
+	margin-bottom:15px;
+	font-style:italic;
+}
+
+.accordion-gallery-overlay-description .overlay-description-link {
+	margin-top:15px;
+}
+
+.accordion-gallery-overlay-description .overlay-description-link a {
+	display:inline-block;
+}
+
+.accordion-gallery-overlay-description .overlay-description-link .blue-link-arrow {
+	margin:3px 0 0 7px;
+}
+
+.accordion-gallery-indicator {
+	right:150px;
+	top:100px;
+	height:1px;
+	width:125px;
+	background-color:#333;
+}
+
+.accordion-gallery-active {
+	background:url(../images/gallery-inactive-overlay-3x3.png) 0 0 repeat;
+}
+
+.accordion-gallery-drag {
+	cursor:hand;
+	cursor:grab;
+	cursor:-moz-grab;
+	cursor:-webkit-grab;
+	cursor:url(../images/grab.png);
+}
+
+.accordion-gallery-indicator-inner {
+	background-color:#999;
+}
+
+.accordion-gallery-indicator-control {
+	width:11px;
+	height:12px;
+	background:url(../images/gallery-indicator-icons-11x12.png) 0 0 no-repeat;
+	position:absolute;
+	top:-15px;
+	left:-1px;
+}
+
+.accordion-gallery-indicator-control.pause {
+	background-position:0 0;
+}
+
+.accordion-gallery-indicator-control.play {
+	background-position:0 -12px;
+}
